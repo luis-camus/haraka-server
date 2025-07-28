@@ -1,0 +1,5 @@
+waks \
+  --to test@localhost \
+  --from you@localhost \
+  --server localhost:2525
+  

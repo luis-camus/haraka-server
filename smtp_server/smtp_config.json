@@ -1,0 +1,7 @@
+{
+  "host": "localhost",
+  "port": 2555,
+  "enable_tls": false,
+  "auth_user": "testuser",
+  "auth_pass": "testpass"
+}

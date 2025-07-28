@@ -1,0 +1,47 @@
+Return-Path: <sender@codeffee.com>
+Received: from mail.example.com (mail.example.com [192.168.1.100])
+    by mx.codeffee.com (Haraka/2.8.28) with ESMTP id F3BB32A4
+    for <recipient@codeffee.com>; Wed, 21 Jul 2025 12:34:56 +0800
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=example.com; s=default;
+    t=1626850496; bh=JHhs82bc82klsla==; h=From:To:Subject:Date;
+    b=fakeSignatureHere
+X-Originating-IP: [203.0.113.42]
+X-Mailer: Thunderbird 91.0
+User-Agent: Mozilla Thunderbird 91.0
+Message-ID: <CAF0101010AFA@example.com>
+In-Reply-To: <CAFFAKEINREPLY@example.com>
+References: <CAFFAKEINREPLY@example.com>
+Subject: Re: Important Update – Please Review
+From: John Doe <sender@example.com>
+To: Jane Smith <recipient@codeffee.com>
+Date: Wed, 21 Jul 2025 12:34:56 +0800
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="===============8334024345521528873=="
+
+--===============8334024345521528873==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi Jane,
+
+This is a test email for scraping headers on your Haraka server.
+Please let me know once it's received successfully.
+
+Regards,  
+John
+
+--===============8334024345521528873==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <p>Hi Jane,</p>
+    <p>This is a <strong>test email</strong> for scraping headers on your Haraka server.<br/>
+    Please let me know once it's received successfully.</p>
+    <p>Regards,<br/>John</p>
+  </body>
+</html>
+
+--===============8334024345521528873==--

@@ -1,0 +1,10 @@
+{
+  "name": "haraka_local",
+  "description": "An SMTP Server",
+  "version": "0.0.1",
+  "dependencies": {
+    "haraka-plugin-maildir": "github:alex2600/haraka-plugin-maildir"
+  },
+  "repository": "",
+  "license": "MIT"
+}

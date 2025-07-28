@@ -1,0 +1,29 @@
+From: sender@codeffee.com
+To: recipient1@codeffee.com
+Cc: test@demo.com
+Reply-To: noreply@codeffee.com
+Subject: Haraka Complex Test Email
+Date: Mon, 22 Jul 2025 10:00:00 +0800
+Message-ID: <1234567890@codeffee.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="boundary123"
+X-Mailer: TestMailer/1.0
+X-Test-Header: REMOVE_THIS
+X-Tracking-ID: 99999
+
+--boundary123
+Content-Type: text/plain; charset="utf-8"
+
+Hello from Haraka! This is the plain-text part.
+Remove headers like X-Test-Header and X-Tracking-ID.
+
+--boundary123
+Content-Type: text/html; charset="utf-8"
+
+<html>
+  <body>
+    <p>Hello from <b>Haraka!</b> This is the <i>HTML</i> part.</p>
+  </body>
+</html>
+
+--boundary123--
