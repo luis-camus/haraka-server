@@ -1,0 +1,19 @@
+From: marketing@example.com
+To: customer@example.com
+Subject: Special Offer - Limited Time Deal
+
+Date: Mon, 21 Jul 2025 15:35:00 +0800
+Message-ID: <marketing12345@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Hello valued customer,
+
+We have a special promotion just for you!
+Our products are now available at discounted prices.
+
+This is a limited time offer, so don't wait too long.
+Visit our website to see all the amazing deals.
+
+Best regards,  
+Marketing Team 

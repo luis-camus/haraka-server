@@ -67,13 +67,80 @@ To create custom plugins:
 For plugin docs:
 haraka -h Plugins
 
+## 🚀 Available Plugins
+
+### Current Plugins
+- **header_scraper**: Extracts and saves email headers as JSON
+- **custom_filter**: Filters emails based on subject keywords
+
+### New Learning Plugins
+- **content_analyzer**: Analyzes email content for spam indicators and keywords
+- **rate_limiter**: Implements rate limiting per IP address
+- **email_router**: Routes emails based on content analysis
+- **webhook_sender**: Sends email data to external webhooks
+- **database_logger**: Stores email data in SQLite database
+
+### To Enable New Plugins
+Add any of the plugin names to your `config/plugins` file:
+```
+header_scraper
+custom_filter
+content_analyzer
+rate_limiter
+email_router
+webhook_sender
+database_logger
+```
+
+### Plugin Dependencies
+For the database_logger plugin, install SQLite:
+```bash
+npm install sqlite3
+```
+
 📖 Useful Haraka CLI Commands
 haraka -c .                 # Start Haraka in the current directory
 haraka -h <plugin-name>     # Help for a specific plugin
 
-💡 Need More?
+## 🧪 Testing Your Plugins
 
-Let me know if you want to:
-	•	Store full message body
-	•	Forward emails conditionally
-	•	Save to a database or trigger a webhook
+Use the included test suite to test all plugins:
+
+```bash
+# Run all tests
+node test_plugins.js
+
+# Run only rate limit test
+node test_plugins.js --rate-limit-only
+
+# Check plugin outputs
+node test_plugins.js --check-outputs
+
+# Show help
+node test_plugins.js --help
+```
+
+## 📚 Learning Resources
+
+- **LEARNING_GUIDE.md**: Comprehensive guide to understanding Haraka and implementing plugins
+- **Haraka Documentation**: https://haraka.github.io/
+- **Plugin Examples**: Check the `plugins/` directory for working examples
+
+## 🎯 Next Steps
+
+1. **Start with simple plugins**: Enable `content_analyzer` and `rate_limiter` first
+2. **Experiment with configuration**: Modify plugin settings to see different behaviors
+3. **Build your own plugins**: Use the examples as templates for your own ideas
+4. **Integrate with external services**: Set up webhooks, databases, or APIs
+5. **Monitor and optimize**: Use the test suite to measure performance
+
+💡 **Need More Ideas?**
+
+- **Machine Learning**: Train spam detection models on your email data
+- **Analytics Dashboard**: Create a web interface to view email statistics
+- **Email Encryption**: Implement PGP/GPG encryption/decryption
+- **Attachment Processing**: Scan, compress, or extract content from attachments
+- **Multi-tenant Support**: Route emails for different domains/organizations
+
+
+
