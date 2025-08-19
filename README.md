@@ -79,6 +79,7 @@ haraka -h Plugins
 - **email_router**: Routes emails based on content analysis
 - **webhook_sender**: Sends email data to external webhooks
 - **database_logger**: Stores email data in SQLite database
+- **mongodb_logger**: Stores `from`, `to`, and body content in MongoDB
 
 ### To Enable New Plugins
 Add any of the plugin names to your `config/plugins` file:
@@ -90,6 +91,7 @@ rate_limiter
 email_router
 webhook_sender
 database_logger
+mongodb_logger
 ```
 
 ### Plugin Dependencies
@@ -97,6 +99,16 @@ For the database_logger plugin, install SQLite:
 ```bash
 npm install sqlite3
 ```
+
+For the mongodb_logger plugin, install MongoDB driver:
+```bash
+npm install mongodb
+```
+
+Environment variables (optional):
+- `MONGODB_URI` (default: `mongodb://localhost:27017`)
+- `MONGODB_DB` (default: `haraka_emails`)
+- `MONGODB_COLLECTION` (default: `emails`)
 
 📖 Useful Haraka CLI Commands
 haraka -c .                 # Start Haraka in the current directory

@@ -67,14 +67,15 @@ rcpt_to.in_host_list
 # ----------
 # queues: discard  qmail-queue  quarantine  smtp_forward  smtp_proxy
 # Queue mail via smtp - see config/smtp_forward.ini for where your mail goes
+# header_scraper
 
 # Custom plugins (order matters!)
 debug_test
-header_scraper
 content_analyzer
 email_router
 webhook_sender
 database_logger
+mongodb_logger
 custom_filter
 rate_limiter
 queue/smtp_forward

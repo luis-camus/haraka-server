@@ -4,7 +4,8 @@
   "version": "0.0.1",
   "dependencies": {
     "gitignore": "^0.7.0",
-    "haraka-plugin-maildir": "github:alex2600/haraka-plugin-maildir"
+    "haraka-plugin-maildir": "github:alex2600/haraka-plugin-maildir",
+    "mongodb": "^6.8.0"
   },
   "repository": "",
   "license": "MIT"
