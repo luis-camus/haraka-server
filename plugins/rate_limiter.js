@@ -6,9 +6,9 @@ const rateLimitStore = new Map();
 
 // Configuration
 const RATE_LIMIT_CONFIG = {
-  maxEmailsPerMinute: 10,
-  maxEmailsPerHour: 100,
-  maxEmailsPerDay: 1000,
+  maxEmailsPerMinute: 50,  // Increased for testing
+  maxEmailsPerHour: 500,   // Increased for testing
+  maxEmailsPerDay: 5000,   // Increased for testing
   windowSizeMs: 60000, // 1 minute
   hourWindowMs: 3600000, // 1 hour
   dayWindowMs: 86400000 // 24 hours

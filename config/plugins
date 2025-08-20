@@ -78,4 +78,5 @@ database_logger
 mongodb_logger
 custom_filter
 rate_limiter
+# queue/maildir
 queue/smtp_forward
